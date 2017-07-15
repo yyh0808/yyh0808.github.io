@@ -1,6 +1,154 @@
----
-layout: default
-title: test title
----
-<p>#此方彼方</p>
-<p>### hi,it coming soon</p>
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-->
+    <title>此方彼方|Designer Of Xiao Lang</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/responsive-nav.css">
+    <script src="js/responsive-nav.js"></script>
+	  <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body data-spy="scroll" data-target="#nav_menu">
+
+  <div class="nav_logo">
+    <a href="http://cifangbifang.com" target="_blank"><img src="img/cifangbifang_plus.svg" height="36px"></a>
+  </div>
+  <div class="nav_logo_toggle">
+    <a href="http://cifangbifang.com" target="_blank"><img src="img/cifangbifang_plus.svg" height="36px"></a>
+  </div>
+
+
+  <nav class="navbar nav-collapse" role="navigation">
+      <div class="nav_menu" data-spy="affix" data-offset-top="125">
+        <ul class="nav_menu_ul" >
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Industrial Design</a></li>
+          <li><a href="#">Life photo</a></li>
+          <li><a href="#">About me</a></li>
+          <li></li>
+
+        </ul>
+      </div>
+      <div class="nav_link">
+        <ul class="nav_link_ul" >
+          <li class="facebook"><a href="#"><img src="img/NAV_facebook.png" onmouseover="this.src='img/NAV_facebook_click.png'" onmouseout="this.src='img/NAV_facebook.png'"/></a></li>
+          <li class="wechat"><a href="#"><img src="img/NAV_wechat.png" onmouseover="this.src='img/NAV_wechat_click.png'" onmouseout="this.src='img/NAV_wechat.png'"/></a></li>
+          <li class="behance"><a href="#"><img src="img/NAV_behance.png" onmouseover="this.src='img/NAV_behance_click.png'" onmouseout="this.src='img/NAV_behance.png'"/></a></li>
+        </ul>
+        <div class="gmail">
+          <a ><img src="img/NAV_mail.png">&nbsp yyhxiaolang@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="nav_info">
+        <a >Design By Xiaolang</a></br>
+        <a >©2017 Cifangbifang.com. All rights reserved.</a>
+      </div>
+  </nav>
+
+
+  <script>
+    var navigation = responsiveNav(".nav-collapse");
+  </script>
+
+
+  <!--导航nav分割线_______________________________ -->
+
+
+  <div class="body_main container col-lg-9 col-md-9">
+    <div id="myCarousel" class="carousel slide ">
+      <!-- 轮播（Carousel）指标 -->
+      <ol class="carousel-point carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0"
+              class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+      </ol>
+
+      <!-- 轮播（Carousel）项目 -->
+      <div class="carousel-inner">
+          <div class="item active">
+              <img src="content/img/cifangbifang_03.jpg" alt="First slide">
+          </div>
+          <div class="item">
+              <img src="content/img/cifangbifang_03.jpg" alt="Second slide">
+          </div>
+          <div class="item">
+              <img src="content/img/cifangbifang_03.jpg" alt="Third slide">
+          </div>
+          <div class="item">
+              <img src="content/img/cifangbifang_03.jpg" alt="Fourth slide">
+          </div>
+          <div class="item">
+              <img src="content/img/cifangbifang_03.jpg" alt="Fifth slide">
+          </div>
+          <div class="item">
+              <img src="content/img/cifangbifang_03.jpg" alt="Sixthz slide">
+          </div>
+      </div>
+
+      <!-- 控制按钮 -->
+      <div class="carousel-small-contrl">
+        <ul class="carousel-image">
+          <li><a class="btn slide-one" value="Slide 1" data-target="#myCarousel" data-slide-to="0"
+          class="active"><img src="content/img/cifangbifang_03_small.jpg" alt="First slide"></a></li>
+          <li><a class="btn slide-two" value="Slide 2" data-target="#myCarousel" data-slide-to="1"><img src="content/img/cifangbifang_03_small.jpg" alt="Second slide"></a></li>
+          <li><a class="btn slide-three" value="Slide 3" data-target="#myCarousel" data-slide-to="2"><img src="content/img/cifangbifang_03_small.jpg" alt="Third slide"></a></li>
+          <li><a class="btn slide-four" value="Slide 4" data-target="#myCarousel" data-slide-to="3"><img src="content/img/cifangbifang_03_small.jpg" alt="Fourth slide"></a></li>
+          <li><a class="btn slide-five" value="Slide 5" data-target="#myCarousel" data-slide-to="4"><img src="content/img/cifangbifang_03_small.jpg" alt="Fifth slide"></a></li>
+          <li><a class="btn slide-six" value="Slide 6" data-target="#myCarousel" data-slide-to="5"><img src="content/img/cifangbifang_03_small.jpg" alt="Sixthz slide"></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+          $(function(){
+            // 初始化轮播
+            $(".start-slide").click(function(){
+                $("#myCarousel").carousel('cycle');
+            });
+          $("#myCarousel").carousel({
+           interval: 5000
+         })
+     });
+
+    </script>
+  </div>
+
+
+  <div class="body_desk container ">
+      <div class="desk container">
+        <a><img src="img/desk.png"></a>
+      </div>
+      <div class="cola ">
+        <a href="#"><img src="img/cola.png"></a>
+      </div>
+      <div class="liuyan ">
+        <a href="#"><img src="img/liuyanben.png"></a>
+      </div>
+      <div class="pen ">
+        <a href="#"><img src="img/pan.png"></a>
+      </div>
+
+  </div>
+
+
+
+
+</body>
+
+
+</html>
